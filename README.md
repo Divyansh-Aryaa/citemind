@@ -13,15 +13,15 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 ![Progress](https://img.shields.io/badge/Progress-20%25-blueviolet?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
-- ✅ Document Ingestion
-- ⏳ Text Cleaning
-- ⏳ Chunking
-- ⏳ Embeddings
-- ⏳ Vector Database
-- ⏳ Hybrid Retrieval
-- ⏳ Re-ranking
-- ⏳ Evaluation
-- ⏳ CI/CD
+-  Document Ingestion (Competed)
+-  Text Cleaning
+-  Chunking
+-  Embeddings
+-  Vector Database
+-  Hybrid Retrieval
+-  Re-ranking
+-  Evaluation
+-  CI/CD
 
 ## Tech Stack
 
@@ -41,7 +41,7 @@ Build a production-quality RAG pipeline while learning every architectural compo
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/citemind.git
+git clone https://github.com/Divyansh-Aryaa/citemind.git
 cd citemind
 ```
 
@@ -78,8 +78,10 @@ pip install -r requirements.txt
 ## 4. Add Your Documents
 
 Place your files inside:
+> This folder structure should match or you could change the code according to your folder structure 
 
 ```text
+
 data/raw/
 
 ├── pdf_files/
