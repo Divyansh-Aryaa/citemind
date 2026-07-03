@@ -14,7 +14,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
 -  Document Ingestion (Competed)
--  Text Cleaning
+-  Text Cleaning (Completed)
 -  Chunking
 -  Embeddings
 -  Vector Database
@@ -196,3 +196,18 @@ Reasons:
 - Encourage users to experiment with their own datasets.
 
 Simply place your own documents inside `data/raw/` following the supported folder structure.
+
+## Roadmap
+
+- [x] Multi-format document ingestion
+- [x] Modular document cleaning pipeline
+- [ ] Intelligent chunking with overlap
+- [ ] Embedding generation
+- [ ] ChromaDB integration
+- [ ] Semantic retrieval
+- [ ] Hybrid retrieval (BM25 + Vector)
+- [ ] Cross-encoder reranking
+- [ ] Citation generation
+- [ ] RAG evaluation with RAGAS
+- [ ] FastAPI / Streamlit interface
+- [ ] CI/CD quality gates
