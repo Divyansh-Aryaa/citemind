@@ -10,7 +10,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 
 ## Current Progress
 ![Status](https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-20%25-blueviolet?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-30%25-blueviolet?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
 -  Document Ingestion (Competed)
@@ -32,9 +32,68 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 - Sentence Transformers
 - RAGAS
 
+## Features
+
+- PDF
+- Markdown
+- HTML
+- Plain Text
+
+Each document is converted into LangChain `Document` objects while preserving rich metadata such as:
+
+- filename
+- source path
+- page number (PDFs)
+- file type
+
+---
+
+### Document Cleaning Pipeline
+
+The preprocessing pipeline currently performs:
+
+- Unicode normalization (NFKC)
+- Hyphenated word repair
+- Multiple whitespace normalization
+- Blank line normalization
+- Trailing whitespace removal
+- Metadata preservation
+
+Designed with a modular architecture for future document-specific cleaning.
+
+
+
 ## Project Goal
 
 Build a production-quality RAG pipeline while learning every architectural component rather than relying on tutorials.
+
+## Project Structure
+
+```text
+CiteMind/
+│
+├── data/
+│   └── raw/
+│       ├── pdf_files/
+│       ├── markdown_files/
+│       ├── html_files/
+│       └── text_files/
+│
+├── src/
+│   ├── chunking/
+│   ├── cleaning/
+│   ├── embeddings/
+│   ├── evaluation/
+│   ├── ingestion/
+│   ├── llm/
+│   ├── retrieval/
+│   └── utils/
+│
+├── prompts/
+├── evals/
+├── tests/
+└── README.md
+```
 
 # Getting Started
 
@@ -106,6 +165,25 @@ python -m src.ingestion.loader
 ```
 
 You should see a summary showing the number of files processed and LangChain `Document` objects created.
+
+
+## Current Pipeline
+
+```text
+Raw Documents
+      │
+      ▼
+Document Ingestion
+      │
+      ▼
+LangChain Documents
+      │
+      ▼
+Cleaning & Preprocessing
+      │
+      ▼
+Clean Documents
+```
 
 ## Sample Data
 
