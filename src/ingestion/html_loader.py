@@ -6,7 +6,6 @@ from langchain_community.document_loaders import BSHTMLLoader
 def load_html(file_path: Path):
     """Process all HTML files in a directory"""
 
-
   
     loader = BSHTMLLoader(str(file_path))
     documents = loader.load()
