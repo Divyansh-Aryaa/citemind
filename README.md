@@ -10,12 +10,12 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 
 ## Current Progress
 ![Status](https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-30%25-blueviolet?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-40%25-blueviolet?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
--  Document Ingestion (Competed)
+-  Document Ingestion (Completed)
 -  Text Cleaning (Completed)
--  Chunking
+-  Chunking (Completed)
 -  Embeddings
 -  Vector Database
 -  Hybrid Retrieval
@@ -60,6 +60,14 @@ The preprocessing pipeline currently performs:
 - Metadata preservation
 
 Designed with a modular architecture for future document-specific cleaning.
+
+### Intelligent Document Chunking
+
+- RecursiveCharacterTextSplitter
+- Configurable chunk size and overlap
+- Metadata preservation across chunks
+- Context-aware overlapping chunks
+- Chunk statistics and validation
 
 
 
@@ -183,6 +191,13 @@ Cleaning & Preprocessing
       │
       ▼
 Clean Documents
+      │
+      ▼
+Document Chunking
+      │
+      ▼
+Embeddings
+
 ```
 
 ## Sample Data
@@ -201,7 +216,7 @@ Simply place your own documents inside `data/raw/` following the supported folde
 
 - [x] Multi-format document ingestion
 - [x] Modular document cleaning pipeline
-- [ ] Intelligent chunking with overlap
+- [x] Intelligent chunking with overlap
 - [ ] Embedding generation
 - [ ] ChromaDB integration
 - [ ] Semantic retrieval
