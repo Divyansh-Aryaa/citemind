@@ -196,7 +196,7 @@ Clean Documents
 Document Chunking
       │
       ▼
-Embeddings
+Embeddings (To be completed)
 
 ```
 
