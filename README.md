@@ -10,13 +10,13 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 
 ## Current Progress
 ![Status](https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-40%25-blueviolet?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-50%25-blueviolet?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
 -  Document Ingestion (Completed)
 -  Text Cleaning (Completed)
 -  Chunking (Completed)
--  Embeddings
+-  Embeddings (Completed)
 -  Vector Database
 -  Hybrid Retrieval
 -  Re-ranking
